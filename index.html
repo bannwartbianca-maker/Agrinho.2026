@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equilíbrio: Produção e Meio Ambiente</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <a href="#conteudo-principal" class="atalho-acessibilidade">Pular para o conteúdo principal</a>
+
+    <header role="banner">
+        <h1>Produção e Meio Ambiente: O Equilíbrio Necessário</h1>
+        <p>Aprenda como a agricultura moderna e a proteção da natureza caminham juntas.</p>
+    </header>
+
+    <main id="conteudo-principal" role="main">
+        
+        <section class="bloco-conteudo" aria-labelledby="titulo-sobre">
+            <h2 id="titulo-sobre">O que é a Agricultura em Equilíbrio?</h2>
+            <p>Produzir alimentos e proteger o meio ambiente não são coisas separadas. O verdadeiro equilíbrio acontece quando o agricultor cuida muito bem da sua plantação de soja sem destruir as florestas e os rios que ficam ao redor. Quando cuidamos da natureza, ela nos devolve uma terra muito mais forte e saudável para continuarmos plantando por muitos anos.</p>
+            
+            <h3>Pontos Positivos da Agricultura Sustentável</h3>
+            <ul>
+                <li><strong>Proteção dos Rios:</strong> As árvores perto da água são mantidas de pé, o que evita que os rios sequem ou fiquem cheios de terra.</li>
+                <li><strong>Economia de Água:</strong> Novas tecnologias de irrigação molham apenas a raiz da planta, gastando muito menos água.</li>
+                <li><strong>Uso de Defensores Naturais:</strong> Em vez de venenos químicos, são usados insetos do bem e produtos biológicos para defender a plantação das pragas.</li>
+                <li><strong>Solo Mais Rico:</strong> A terra não é totalmente revirada; ela fica protegida pela palha das colheitas anteriores, o que mantém seus nutrientes naturais.</li>
+            </ul>
+        </section>
+
+        <section class="bloco-conteudo" aria-labelledby="titulo-grafico">
+            <h2 id="titulo-grafico">Gráfico da Importância da Agricultura Sustentável</h2>
+            <p>O gráfico abaixo detalha os ganhos ambientais e produtivos reais gerados quando a tecnologia apoia o meio ambiente:</p>
+            
+            <div class="grafico-box">
+                <canvas id="graficoProducao" width="500" height="250" aria-label="Gráfico de barras mostrando os benefícios da sustentabilidade agrícola" role="img"></canvas>
+            </div>
+            
+            <div class="leitor-tela-apenas">
+                <p>Descrição do gráfico: O gráfico em barras mostra os seguintes dados de ganho percentual com práticas sustentáveis: Economia de água obteve 80%; Riqueza e nutrientes do solo obteve 90%; Produção de soja na mesma área subiu para 65% e Redução do uso de químicos artificiais marcou 75%.</p>
+            </div>
+        </section>
+
+        <section class="bloco-conteudo" aria-labelledby="titulo-perguntas">
+            <h2 id="titulo-perguntas">Dúvidas Frequentes</h2>
+            <p>Selecione ou clique nas perguntas abaixo para abrir respostas de linguagem simples:</p>
+            
+            <div class="caixa-faq">
+                <button class="botao-faq" aria-expanded="false" onclick="alternarFaq(this)">
+                    <span>É verdade que a soja pode ajudar o próprio solo?</span>
+                    <span aria-hidden="true" class="sinal">+</span>
+                </button>
+                <div class="resposta-faq" aria-hidden="true">
+                    <p><strong>Resposta:</strong> Sim! A planta da soja possui uma capacidade incrível de absorver o nitrogênio (que é um adubo natural presente no ar) e fixá-lo de volta na terra através de suas raízes. Isso deixa o solo bem alimentado para a próxima safra sem a dependência de adubos industriais.</p>
+                </div>
+            </div>
+
+            <div class="caixa-faq">
+                <button class="botao-faq" aria-expanded="false" onclick="alternarFaq(this)">
+                    <span>Como produzir mais sem abrir novas áreas de mata?</span>
+                    <span aria-expanded="false" onclick="alternarFaq(this)">
+                    <span>Como produzir mais sem abrir novas áreas de mata?</span>
+                    <span aria-hidden="true" class="sinal">+</span>
+                </button>
+                <div class="resposta-faq" aria-hidden="true">
+                    <p><strong>Resposta:</strong> Usando tecnologia de precisão. Ferramentas modernas, como mapas feitos por satélites e drones, indicam exatamente a quantidade de água ou cuidado que cada pedaço do campo precisa. Assim, o agricultor dobra a quantidade de soja colhida no mesmo espaço de terra, preservando as florestas.</p>
+                </div>
+            </div>
+
+            <div class="caixa-faq">
+                <button class="botao-faq" aria-expanded="false" onclick="alternarFaq(this)">
+                    <span>O que significa o Plantio Direto?</span>
+                    <span aria-hidden="true" class="sinal">+</span>
+                </button>
+                <div class="resposta-faq" aria-hidden="true">
+                    <p><strong>Resposta:</strong> É uma prática sustentável onde a semente é colocada na terra sem arar ou revirar o solo. O agricultor planta por cima da palha seca da colheita que passou. Essa palha atua como um protetor térmico contra o sol forte e impede que a chuva forte carregue os nutrientes da terra embora.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer role="contentinfo">
+        <p>&copy; 2026 - Portal de Conscientização Ambiental. Layout adaptado para acessibilidade digital.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
