@@ -1,0 +1,161 @@
+/* --- CONFIGURAÇÕES GERAIS DE ACESSIBILIDADE VISUAL --- */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* Tamanho do texto aumentado para facilitar a leitura de pessoas com baixa visão */
+    font-size: 1.45rem; 
+    line-height: 1.8;
+    color: #111111; /* Contraste máximo (quase preto puro) */
+    
+    /* Imagem em HD de fundo: Um céu azul aberto e um campo de soja bem verde */
+    background: linear-gradient(to bottom, rgba(135, 206, 250, 0.4) 15%, rgba(255, 255, 255, 0.85) 100%), 
+                url('https://images.unsplash.com/photo-1592982537447-7440770cbfc9?q=80&w=1600') no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* Link invisível de acessibilidade que aparece ao pressionar a tecla Tab */
+.atalho-acessibilidade {
+    position: absolute;
+    top: -100px;
+    left: 10px;
+    background: #004d20;
+    color: #ffffff;
+    padding: 15px;
+    z-index: 100;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+}
+.atalho-acessibilidade:focus {
+    top: 10px;
+    outline: 4px solid #ffd700;
+}
+
+/* Oculta textos de tela mas preserva a leitura de sintetizadores de voz */
+.leitor-tela-apenas {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+/* --- ESTILIZAÇÃO DE LAYOUT --- */
+header {
+    background-color: rgba(0, 51, 20, 0.98); /* Verde escuro para contraste rigoroso */
+    color: #ffffff;
+    text-align: center;
+    padding: 60px 20px;
+    border-bottom: 6px solid #ffd700; /* Destaque amarelo */
+}
+
+header h1 {
+    font-size: 3rem;
+    margin: 0 0 15px 0;
+}
+
+header p {
+    font-size: 1.6rem;
+}
+
+main {
+    max-width: 1050px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* Caixas brancas bem visíveis para leitura sem esforço sobre a imagem */
+.bloco-conteudo {
+    background-color: rgba(255, 255, 255, 0.98);
+    margin-bottom: 45px;
+    padding: 45px;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+    border-left: 10px solid #004d20;
+}
+
+h2 {
+    color: #004d20;
+    font-size: 2.4rem;
+    margin-top: 0;
+    border-bottom: 4px solid #2e7d32;
+    padding-bottom: 12px;
+}
+
+h3 {
+    font-size: 1.8rem;
+    color: #2e7d32;
+    margin-top: 30px;
+}
+
+ul {
+    padding-left: 30px;
+}
+
+li {
+    margin-bottom: 18px;
+}
+
+/* Espaço do Gráfico */
+.grafico-box {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 8px;
+    border: 2px solid #b2dfdb;
+    margin-top: 25px;
+}
+
+/* --- ESTILOS DO FAQ (CAIXA DE PERGUNTAS) --- */
+.caixa-faq {
+    margin-bottom: 20px;
+    border: 3px solid #004d20;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.botao-faq {
+    width: 100%;
+    background-color: #e8f5e9;
+    color: #004d20;
+    text-align: left;
+    padding: 22px;
+    font-size: 1.6rem;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background 0.2s;
+}
+
+.botao-faq:hover, .botao-faq:focus {
+    background-color: #c8e6c9;
+    outline: 4px solid #ffd700; /* Foco visível em amarelo para navegação por teclado */
+}
+
+.sinal {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.resposta-faq {
+    display: none; /* Controlado dinamicamente pelo arquivo JS */
+    padding: 25px;
+    background-color: #ffffff;
+    border-top: 3px solid #004d20;
+    font-size: 1.5rem;
+}
+
+footer {
+    text-align: center;
+    padding: 35px;
+    background-color: #111111;
+    color: #ffffff;
+    font-size: 1.2rem;
+    margin-top: 60px;
+}
